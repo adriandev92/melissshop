@@ -36,7 +36,7 @@ def links_button(title: str, body: str, url: str) -> rx.Component:
                 rx.icon(
                     tag="chevrons-right",
                     width="32px",
-                    height="16px"
+                    height="32px"
                 ),
                 rx.center(
                     rx.vstack(
@@ -75,8 +75,9 @@ def button() -> rx.Component:
                      "Siguenos en Facebook",
                      ""
                      ),
+        align="center",
         width="100%",
-        align="center"
+        padding_x="70px"
     )
     
     
