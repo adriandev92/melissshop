@@ -16,6 +16,13 @@ def index() -> rx.Component:
                 max_width="600px"
             )
         ),
+        rx.center(
+            rx.vstack(
+                footer(),
+                max_width="600px",
+                margin_y="32px"
+            )   
+        ),
         margin_y="32px",
         width="100%"
     )
