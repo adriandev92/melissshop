@@ -20,11 +20,12 @@ def index() -> rx.Component:
             rx.vstack(
                 footer(),
                 max_width="600px",
-                margin_y="32px"
-            )   
+                margin_y="32px",
+            )
         ),
         margin_y="32px",
-        width="100%"
+        width="100%",
+        background_color="purple",
     )
 
 

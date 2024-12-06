@@ -199,4 +199,3 @@ def footer() -> rx.Component:
         ),
         align="center"
     )
-            
