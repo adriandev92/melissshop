@@ -1,6 +1,5 @@
 import reflex as rx
 from melissshop.componentes.componentes import navbar, head, button, footer
-import melissshop.styles.styles as styles
 
 
 
