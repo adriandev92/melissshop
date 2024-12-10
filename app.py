@@ -1,4 +1,4 @@
 import reflex as rx
-from melissshop.melissshop import app
+from melissshop.melissshop import launch
 
-app = rx.App()
+launch()
