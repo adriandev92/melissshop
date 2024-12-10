@@ -2,6 +2,13 @@ import reflex as rx
 import datetime
 
 
+def navbar() -> rx.Component:
+    return rx.box(
+        rx.hstack(
+            )
+    )
+
+
 # Logo y descripcion
 
 def head() -> rx.Component:
@@ -34,10 +41,11 @@ def button() -> rx.Component:
             rx.vstack(
                 rx.link(
                     rx.button(
-                        rx.icon(
-                            tag="chevrons-right",
-                            color="black",
-                            margin_x="5px"
+                        rx.image(
+                            src="wha.png",
+                            #color="black",
+                            #margin_x="5px",
+                            width="35px"
                         ),
                         rx.vstack(
                             rx.text("Whatsapp"),
@@ -56,10 +64,11 @@ def button() -> rx.Component:
                 ),
                 rx.link(
                     rx.button(
-                        rx.icon(
-                            tag="chevrons-right",
-                            color="black",
-                            margin_x="5px"
+                        rx.image(
+                            src="wha.png",
+                            #color="black",
+                            #margin_x="5px",
+                            width="35px"
                         ),
                         rx.vstack(
                             rx.text("Grupo de Whatsapp"),
@@ -78,10 +87,11 @@ def button() -> rx.Component:
                 ),
                 rx.link(
                     rx.button(
-                        rx.icon(
-                            tag="chevrons-right",
-                            color="black",
-                            margin_x="5px"
+                        rx.image(
+                            src="inst.png",
+                            #color="black",
+                            #margin_x="5px",
+                            width="30px"
                         ),
                         rx.vstack(
                             rx.text("Instagram"),
@@ -100,10 +110,11 @@ def button() -> rx.Component:
                 ),
                 rx.link(
                     rx.button(
-                        rx.icon(
-                            tag="chevrons-right",
-                            color="black",
-                            margin_x="5px",
+                        rx.image(
+                            src="face.png",
+                            #color="black",
+                            #margin_x="5px",
+                            width="35px"
                         ),
                         rx.vstack(
                             rx.text("Facebook"),
@@ -117,7 +128,7 @@ def button() -> rx.Component:
                         width="350px",
                         height="50px"
                     ),
-                    href="",
+                    href="https://www.facebook.com/profile.php?id=61556559833909&mibextid=ZbWKwL",
                     is_external=True
                 ),
                 #align="center"
@@ -126,76 +137,23 @@ def button() -> rx.Component:
         width="100%",
     )
 
-'''Boton global
-def links_button(title: str, body: str, url: str) -> rx.Component:
-    return rx.link(
-        rx.button(
-            rx.hstack(
-                #rx.center(
-                    rx.icon(
-                        tag="chevrons-right",
-                        color="black",
-                        width="32px",
-                        height="32px",
-                        
-                    ),
-                    rx.vstack(
-                        rx.text(title, size="5", color="black", margin_y="-5px"),
-                        rx.text(body, size="2", color="black", margin_y="-5px"),
-                        align="center",
-                        margin="50px"
-                    ),
-                    align="center"
-                #)
-            ),
-            width="100%",
-            height="55px",
-            bg=rx.color("purple", 11)
-        ),
-        href=url,
-        is_external=True,
-        width="100%"
-    )
-
-Botones que se muestran
-def button() -> rx.Component:
-    return rx.vstack(
-        links_button("Whatsapp",
-                     "Escribeme para contactarme",
-                     "https://wa.me/message/23EIRQUOECRSL1"
-                     ),
-        links_button("Grupo de Whatsapp",
-                     "Unete la comunidad de Melis's Shop",
-                     "https://chat.whatsapp.com/KIJOt6UrCeGBhWou0eionM"
-                     ),
-        links_button("Instagram",
-                     "Siguenos en nuestro Instagram",
-                     "https://www.instagram.com/anxuan_oficial/profilecard/?igsh=emNxcWd2OWw2dnNt"
-                     ),
-        links_button("Facebook",
-                     "Siguenos en Facebook",
-                     ""
-                     ),
-        #align="center",
-        width="100%",
-        padding_x="90px"
-    )
-    '''
     
 # Pie de pagina
 
 def footer() -> rx.Component:
     return rx.hstack(
         rx.image(
-            src="favicon.ico"
+            src="dev.png",
+            width="3em"
         ),
         rx.text(
             f"© 2024-{datetime.date.today().year} MELIS'SSHOP BY"
         ),
         rx.link(
             "ADRIAN CABRALES BALSA",
-            href="https://wa.me/message/+5353451622",
+            href="https://wa.me/+5353451622",
             is_external="True"
         ),
-        align="center"
+        align="center",
+        spacing="1"
     )

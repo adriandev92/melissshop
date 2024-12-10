@@ -1,5 +1,7 @@
 import reflex as rx
-from melissshop.componentes.componentes import head, button, footer
+from melissshop.componentes.componentes import navbar, head, button, footer
+import melissshop.styles.styles as styles
+
 
 
 class State(rx.State):
@@ -8,7 +10,7 @@ class State(rx.State):
 
 
 def index() -> rx.Component:
-    return rx.box(
+    return navbar(), rx.box(
         rx.center(
             rx.vstack(
                 head(),
@@ -25,9 +27,15 @@ def index() -> rx.Component:
         ),
         margin_y="32px",
         width="100%",
-        background_color="purple",
     )
 
 
-app = rx.App()
+app = rx.App(
+    #style=styles.GLOBAL_STYLES
+    style= {
+        "bg": "purple",
+        #"width": "100%"
+        "margin_top": "0px"
+    }
+)
 app.add_page(index)

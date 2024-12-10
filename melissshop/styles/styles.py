@@ -5,13 +5,13 @@ from enum import Enum
 # Colores
 
 class Color(Enum):
-    BACKGROUD="#0C151D"
+    BG="#purple"
     
     
 # Estilos globales
 
 GLOBAL_STYLES = {
-    "backgroud_color": Color.BACKGROUD.value
+    "bg": "purple"
 }
 
 
