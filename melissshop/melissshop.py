@@ -28,13 +28,13 @@ def index() -> rx.Component:
         width="100%",
     )
 
-def launch():
-    app = rx.App(
-        #style=styles.GLOBAL_STYLES
-        style= {
-            "bg": "purple",
-            #"width": "100%"
-            "margin_top": "0px"
-        }
-    )
-    app.add_page(index)
+#def launch():
+app = rx.App(
+    #style=styles.GLOBAL_STYLES
+    style= {
+        "bg": "purple",
+        #"width": "100%"
+        "margin_top": "0px"
+    }
+)
+app.add_page(index)
